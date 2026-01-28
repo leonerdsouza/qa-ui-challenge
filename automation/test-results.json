@@ -1,0 +1,291 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\leona\\OneDrive\\Área de Trabalho\\qa-ui-challenge\\automation\\playwright.config.ts",
+    "rootDir": "C:/Users/leona/OneDrive/Área de Trabalho/qa-ui-challenge/automation/src/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 4
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/leona/OneDrive/Área de Trabalho/qa-ui-challenge/automation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "ui",
+        "name": "ui",
+        "testDir": "C:/Users/leona/OneDrive/Área de Trabalho/qa-ui-challenge/automation/src/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html",
+        {
+          "outputFolder": "playwright-report"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "runAgents": "none",
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.58.0",
+    "workers": 6,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "three-layer-validation.spec.ts",
+      "file": "three-layer-validation.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Validation Tests",
+          "file": "three-layer-validation.spec.ts",
+          "line": 10,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Test 1: Validate task creation - DB - API",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ui",
+                  "projectName": "ui",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 0,
+                      "error": {
+                        "message": "Error: SQLITE_CANTOPEN: unable to open database file",
+                        "stack": "Error: SQLITE_CANTOPEN: unable to open database file"
+                      },
+                      "errors": [
+                        {
+                          "message": "Error: SQLITE_CANTOPEN: unable to open database file"
+                        },
+                        {
+                          "location": {
+                            "file": "C:\\Users\\leona\\OneDrive\\Área de Trabalho\\qa-ui-challenge\\automation\\src\\tests\\three-layer-validation.spec.ts",
+                            "column": 8,
+                            "line": 27
+                          },
+                          "message": "\u001b[31m\"afterAll\" hook timeout of 30000ms exceeded.\u001b[39m\n\n\u001b[0m \u001b[90m 25 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 26 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 27 |\u001b[39m   test\u001b[33m.\u001b[39mafterAll(\u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 28 |\u001b[39m     \u001b[36mawait\u001b[39m dbClient\u001b[33m.\u001b[39mdisconnect()\u001b[33m;\u001b[39m\n \u001b[90m 29 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 30 |\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\leona\\OneDrive\\Área de Trabalho\\qa-ui-challenge\\automation\\src\\tests\\three-layer-validation.spec.ts:27:8\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-28T14:41:18.195Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "f7192d6b41181301e9e5-2c8ac6abf2816968f835",
+              "file": "three-layer-validation.spec.ts",
+              "line": 32,
+              "column": 7
+            },
+            {
+              "title": "Test 2: Validate task update - DB - API",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ui",
+                  "projectName": "ui",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 1,
+                      "error": {
+                        "message": "Error: SQLITE_CANTOPEN: unable to open database file",
+                        "stack": "Error: SQLITE_CANTOPEN: unable to open database file"
+                      },
+                      "errors": [
+                        {
+                          "message": "Error: SQLITE_CANTOPEN: unable to open database file"
+                        },
+                        {
+                          "location": {
+                            "file": "C:\\Users\\leona\\OneDrive\\Área de Trabalho\\qa-ui-challenge\\automation\\src\\tests\\three-layer-validation.spec.ts",
+                            "column": 8,
+                            "line": 27
+                          },
+                          "message": "\u001b[31m\"afterAll\" hook timeout of 30000ms exceeded.\u001b[39m\n\n\u001b[0m \u001b[90m 25 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 26 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 27 |\u001b[39m   test\u001b[33m.\u001b[39mafterAll(\u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 28 |\u001b[39m     \u001b[36mawait\u001b[39m dbClient\u001b[33m.\u001b[39mdisconnect()\u001b[33m;\u001b[39m\n \u001b[90m 29 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 30 |\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\leona\\OneDrive\\Área de Trabalho\\qa-ui-challenge\\automation\\src\\tests\\three-layer-validation.spec.ts:27:8\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-28T14:41:18.207Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "f7192d6b41181301e9e5-7a987529057396da7ebb",
+              "file": "three-layer-validation.spec.ts",
+              "line": 65,
+              "column": 7
+            },
+            {
+              "title": "Test 3: Validate task creation",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ui",
+                  "projectName": "ui",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "failed",
+                      "duration": 0,
+                      "error": {
+                        "message": "Error: SQLITE_CANTOPEN: unable to open database file",
+                        "stack": "Error: SQLITE_CANTOPEN: unable to open database file"
+                      },
+                      "errors": [
+                        {
+                          "message": "Error: SQLITE_CANTOPEN: unable to open database file"
+                        },
+                        {
+                          "location": {
+                            "file": "C:\\Users\\leona\\OneDrive\\Área de Trabalho\\qa-ui-challenge\\automation\\src\\tests\\three-layer-validation.spec.ts",
+                            "column": 8,
+                            "line": 27
+                          },
+                          "message": "\u001b[31m\"afterAll\" hook timeout of 30000ms exceeded.\u001b[39m\n\n\u001b[0m \u001b[90m 25 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 26 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 27 |\u001b[39m   test\u001b[33m.\u001b[39mafterAll(\u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 28 |\u001b[39m     \u001b[36mawait\u001b[39m dbClient\u001b[33m.\u001b[39mdisconnect()\u001b[33m;\u001b[39m\n \u001b[90m 29 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 30 |\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\leona\\OneDrive\\Área de Trabalho\\qa-ui-challenge\\automation\\src\\tests\\three-layer-validation.spec.ts:27:8\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-28T14:41:18.206Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "f7192d6b41181301e9e5-23d6bb72df92c255f9aa",
+              "file": "three-layer-validation.spec.ts",
+              "line": 101,
+              "column": 7
+            },
+            {
+              "title": "Test 4: Validate task creation - UI with DB validation",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "ui",
+                  "projectName": "ui",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "failed",
+                      "duration": 0,
+                      "error": {
+                        "message": "Error: SQLITE_CANTOPEN: unable to open database file",
+                        "stack": "Error: SQLITE_CANTOPEN: unable to open database file"
+                      },
+                      "errors": [
+                        {
+                          "message": "Error: SQLITE_CANTOPEN: unable to open database file"
+                        },
+                        {
+                          "location": {
+                            "file": "C:\\Users\\leona\\OneDrive\\Área de Trabalho\\qa-ui-challenge\\automation\\src\\tests\\three-layer-validation.spec.ts",
+                            "column": 8,
+                            "line": 27
+                          },
+                          "message": "\u001b[31m\"afterAll\" hook timeout of 30000ms exceeded.\u001b[39m\n\n\u001b[0m \u001b[90m 25 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 26 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 27 |\u001b[39m   test\u001b[33m.\u001b[39mafterAll(\u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 28 |\u001b[39m     \u001b[36mawait\u001b[39m dbClient\u001b[33m.\u001b[39mdisconnect()\u001b[33m;\u001b[39m\n \u001b[90m 29 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 30 |\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\leona\\OneDrive\\Área de Trabalho\\qa-ui-challenge\\automation\\src\\tests\\three-layer-validation.spec.ts:27:8\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-28T14:41:18.247Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "f7192d6b41181301e9e5-12a3bde0b0351f2189e0",
+              "file": "three-layer-validation.spec.ts",
+              "line": 133,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-01-28T14:41:16.850Z",
+    "duration": 31457.249,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 4,
+    "flaky": 0
+  }
+}
