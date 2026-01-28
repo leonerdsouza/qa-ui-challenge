@@ -75,13 +75,13 @@ Here’s your chance to be creative and proactive, you are free to discard all o
 ### TESTS ####
 With node.js installed: npm init playwright@latest within the automation folder
 
-Inside the automation folder and with  the application running, run:
+Inside the automation -> src -> tests folder and with  the application running, run:
 
-npx playwright test src/tests/three-layer-validation.spec.ts
-npx playwright test src/tests/negative-tests.spec.ts
+npx playwright test three-layer-validation.spec.ts --headed
+npx playwright test negative-tests.spec.ts --headed
 
 To generate the report you can use:
-npx playwright test src/tests/three-layer-validation.spec.ts --reporter=html,line  
-npx playwright test src/tests/negative-tests.spec.ts --reporter=html,line  
+npx playwright test three-layer-validation.spec.ts --reporter=html,line  
+npx playwright test negative-tests.spec.ts --reporter=html,line  
 
 The UI one it is failing, because through the UI I was not able to add tasks, only through DB and API, I left the test failing to show that I tried to implement it.
