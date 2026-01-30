@@ -17,7 +17,7 @@ export class ApiClient {
 
   async requestRaw<T = any>(method: string, endpoint: string, data?: any): Promise<{status: number, body: T, isJson: boolean}> {
     const url = this.getFullUrl(endpoint);
-    console.log(`🌐 ${method} ${url}`);
+    console.log(`${method} ${url}`);
     
     const response = await this.request.fetch(url, {
       method,

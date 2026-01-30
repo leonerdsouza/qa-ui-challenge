@@ -11,8 +11,6 @@ export interface Task {
   title: string;
   description: string | null;
   status: 'pending' | 'completed';
-  assigned_to?: number;
-  created_by?: number;
 }
 
 export interface Feedback {
