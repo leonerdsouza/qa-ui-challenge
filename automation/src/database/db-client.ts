@@ -67,7 +67,7 @@ export class DBClient {
       `INSERT INTO tasks (user_id, title, description, status) 
        VALUES (?, ?, ?, ?)`,
       [
-        task.user_id || task.assigned_to || 1,
+        task.user_id || 1,
         task.title || '',
         task.description || '',
         task.status || 'pending'
