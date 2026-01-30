@@ -80,6 +80,8 @@ Inside the automation -> src -> tests folder and with  the application running, 
 npx playwright test three-layer-validation.spec.ts --headed
 npx playwright test negative-tests.spec.ts --headed
 
+You can see a report at Automation -> playwright-report -> index.html, you can open directly into your browser or with LiveServer extension.
+
 To generate the report you can use:
 npx playwright test three-layer-validation.spec.ts --reporter=html,line  
 npx playwright test negative-tests.spec.ts --reporter=html,line  
